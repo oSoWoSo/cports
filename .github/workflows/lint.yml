@@ -3,11 +3,12 @@ name: Lint tree and check format
 on:
   push:
     branches:
-      - master
+      - '**'
     paths:
       - 'main/**'
       - 'contrib/**'
       - 'src/**'
+      - 'experimental/**'
 
   pull_request:
     branches:
